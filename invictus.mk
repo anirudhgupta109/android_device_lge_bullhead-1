@@ -17,13 +17,17 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
+#Bootanimation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+
 # Inherit device configuration
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/invictus/config/common.mk)
 
-PRODUCT_NAME := du_bullhead
+PRODUCT_NAME := inv_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5X
