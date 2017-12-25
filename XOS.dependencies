@@ -1,0 +1,12 @@
+[
+ {
+   "repository":  "GZR-Kernels/kernel_lge_bullhead",
+   "target_path": "kernel/lge/bullhead",
+   "branch":      "8.1"
+ },
+ {
+   "repository":  "AllianceOreo/android_vendor_lge",
+   "target_path": "vendor/lge",
+   "branch":      "AllianceO"
+ }
+]

@@ -25,9 +25,9 @@ TARGET_SCREEN_HEIGHT := 1920
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/invictus/config/common.mk)
+$(call inherit-product, vendor/xos/config/common.mk)
 
-PRODUCT_NAME := inv_bullhead
+PRODUCT_NAME := XOS_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5X
@@ -38,4 +38,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
     BUILD_FINGERPRINT=google/bullhead/bullhead:8.1.0/OPM1.171019.011/4448085:user/release-keys \
     PRIVATE_BUILD_DESC="bullhead-user 8.1.0 OPM1.171019.011 4448085 release-keys"
-    
